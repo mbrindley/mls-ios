@@ -67,13 +67,13 @@
     [_mapView setRegion:viewRegion animated:NO];
     
     
-    CLLocationCoordinate2D pointLocation = [self geoCodeUsingAddress:@"54 Temple St Boston MA 02114"];
+    CLLocationCoordinate2D pointLocation = [self geoCodeUsingAddress:@"24 Beacon St  Boston, MA 02133"];
     
     // Add an annotation
     MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
     point.coordinate = pointLocation;
-    point.title = @"54 Temple St #3";
-    point.subtitle = @"Beacon Hill 02114";
+    point.title = @"24 Beacon St";
+    point.subtitle = @"Beacon Hill 02113";
     
     [_mapView addAnnotation:point];
 }
